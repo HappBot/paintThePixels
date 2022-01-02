@@ -1,0 +1,33 @@
+header {
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(80, 10px);
+    grid-gap: 3px;
+}
+
+.cell {
+    display: flex;
+    background-color:lightslategrey;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+.cell:hover {
+    background-color: white;
+}
