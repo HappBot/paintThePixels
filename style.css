@@ -1,5 +1,17 @@
 header {
-    margin: 10px;
+    display: flex;
+    width:calc(10*80px);
+    height: 50px;
+    border-bottom: 5px solid black ;
+    justify-content:center;
+    align-items: center;
+    background-color:lightslategrey;
+    color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+    margin-right: 10px;
 }
 
 body {
@@ -12,20 +24,26 @@ body {
 #grid-container {
     display: grid;
     grid-template-columns: repeat(80, 10px);
-    grid-gap: 3px;
+    grid-auto-flow: dense;
 }
+
 
 .cell {
     display: flex;
-    background-color:lightslategrey;
-    color: aliceblue;
+    color: #f0f8ff;
     align-items: center;
     justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    box-sizing: border-box;
     width: 10px;
     height: 10px;
+}
+
+.color1 {
+    background-color: rgb(143, 143, 143);
+}
+
+.color2 {
+    background-color: rgb(165, 165, 165);
 }
 
 .cell:hover {
